@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculador IRPF INSS</title>
+</head>
+<body>
+    <h1>Calculadora IRPF/INSS</h1>
+    <label for="">Salário bruto mensal</label><br/>
+    <input type="number" id="sal" min="1" placeholder="R$ 0,00">
+    <button onclick="calcirpf()">Calcular</button>
+    <script src="salario.js"></script>
+    
+    <h2>IRPF</h2>
+    <table>
+        <tr>
+            <th>Base do cálculo</th>
+            <th>Alíquota</th>
+        </tr>
+        <tr>
+            <td id="t">Até R$ 2.112,00</td>
+            <td>Isento</td>
+        </tr>
+            <td id="t">Até R$ 2.112,00 até R$ 2.826,65</td>
+            <td>7,5%</td>
+        <tr>
+            <td id="t">Até R$ 2.826,65 até R$ 3.751,05</td>
+            <td>15,5%</td>
+        </tr>
+            <td id="t">Até R$ 3.751,06 até R$ 4.664,68</td>
+            <td id="a">22,5%</td>
+        <tr>
+            <td id="t">Acima de R$ 4.664,68</td>
+            <td>27,5%</td>
+        </tr>
+            <td id=""></td>
+    </table>
+    <h2>INSS</h2>
+    <table>
+        <tr>
+            <th>Salário de contribuição</th>
+            <th>Alíquota</th>
+        </tr>
+        <tr>
+            <td id="t">Até R$ 1.412,00</td>
+            <td>7,5</td>
+        </tr>
+            <td id="t">Até R$ 2.112,01 até R$ 2.666,68</td>
+            <td>9%</td>
+        <tr>
+            <td id="t">Até R$ 2.666,69 até R$4.000,03</td>
+            <td>12%</td>
+        </tr>
+            <td id="t">Até R$ 4.000,04 até R$7.786,02</td>
+            <td id="a">14%</td>
+    </table>
+    <p>Tabela de contribuição do INSS 2024 atualizada</p>
+    <div id="resultadoIrpf"></div>
+    <div id="resultadoInss"></div>
+</body>
+</html>

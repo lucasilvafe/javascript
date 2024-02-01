@@ -1,0 +1,55 @@
+body
+{
+    background: rgb(240, 253, 248);
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input
+{
+    width: 150pt;
+    height: 20pt;
+    border-style: none;
+    border-radius: 3pt;
+}
+
+button
+{
+    width: 50pt;
+    height: 25pt;
+    border-radius: 3pt;
+    border-style: hidden;
+    margin-left: 20pt;
+    color: rgb(5, 5, 5);
+    background: rgb(161, 250, 161);
+}
+
+table
+{
+    border-radius: 3pt;
+    
+}
+
+table,td#t
+{
+    padding: 5pt;
+    width: 270pt;
+    border-radius: 2pt;
+    background: white;
+}
+
+td#a
+{
+    color: rgb(27, 27, 27);
+    background: white;
+}
+table
+{
+    border-radius: 3pt;
+    background: rgb(196, 233, 213);
+    
+}
